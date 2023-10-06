@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EdoRoli</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="js/indexjs.js"></script>
+  </head>
+  <body>
+    <header class="navbar-container">
+      <div class="heading">
+        <h1>EdoRoli</h1>
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="#venue">Venue</a></li>
+          <li><a href="#pesantamansangkareang">Pesan</a></li>
+          <li><a href="#tentang">Tentang Kami</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="content">
+        <div class="content-description">
+          <h1 class="title">Solusi Reservasi Venue Online Kota Mataram!</h1>
+          <p>
+            Membuat reservasi menjadi lebih efesien dan efektif dengan
+            ketersediaan informasi yang lengkap dan sistem yang mudah dan cepat.
+          </p>
+          <button><a href="#pesantamansangkareang">Pesan Sekarang</a></button>
+        </div>
+      </div>
+
+      <aside>
+        <article class="profile card"  id="tentang">
+          <header>
+            <p>Your Best Event Reservation Platform</p>
+            <figure>
+              <img src="assets/image/logo-edoroli.png" alt="EdoRoli" />
+              <figcaption>EdoRoli</figcaption>
+            </figure>
+          </header>
+          <section>
+            <table>
+              <tr>
+                <th>Phone</th>
+                <td>08123456789</td>
+              </tr>
+              <tr>
+                <th>Email</th>
+                <td>edoroli@gmail.com</td>
+              </tr>
+            </table>
+          </section>
+        </article>
+      </aside>
+      <article id="venue" class="card">
+        <img src="assets/image/sangkareang.jpg" alt="sangkareang" />
+        <h1>Taman Sangkareang</h1>
+        <p>
+          Salah satu RTH Publik yang berada di Kelurahan Mataram Barat dengan
+          jenis taman kota.
+        </p>
+        <ul>
+          <li>Area yang luas</li>
+          <li>Tempat terbuka</li>
+          <li>Sering dikunjungi masyarakat</li>
+        </ul>
+        <button id="pesantamansangkareang" onclick="changeColor('pesantamansangkareang')">Pesan Sekarang</button>
+      </article>
+
+      <article id="venue" class="card">
+        <img src="assets/image/tamanbudaya.jpg" alt="tamanbudaya" />
+        <h1>Taman Budaya</h1>
+        <p>
+          Taman Budaya adalah suatu area yang mewadahi kegiatan kesenian dan
+          kebudayaan .
+        </p>
+        <ul>
+          <li>Area yang luas</li>
+          <li>Tempat tertutup</li>
+          <li>Sering menjadi area pentas seni</li>
+        </ul>
+        <button id="pesantamanbudaya" onclick="changeColor('pesantamanbudaya')">Pesan Sekarang</button>
+      </article>
+
+      <article id="venue" class="card">
+        <img src="assets/image/selaparang.jpg" alt="selaparang" />
+        <h1>Bendara Selaparang</h1>
+        <p>
+          Bekas Bandara sering dijadikan tempat dilaksanakannya
+          sebuah acara musik.
+        </p>
+        <ul>
+          <li>Area yang luas</li>
+          <li>Tempat terbuka</li>
+          <li>Sering menjadi area pentas musik</li>
+        </ul>
+        <button id="pesanbandara" onclick="changeColor('pesanbandara')">Pesan Sekarang</button>
+      </article>
+    </main>
+    <footer>
+        <p>EdoRoli Platform Reservasi Venue Online &#169; 2023</p>
+    </footer>
+  </body>
+</html>

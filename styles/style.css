@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header.navbar-container{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1rem;
+    z-index: 2;
+}
+
+header.navbar-container .heading h1{
+    color: red;
+}
+
+header.navbar-container .nav-list ul{
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem 1rem;
+}
+
+header.navbar-container .nav-list li{
+    list-style-type: none;
+}
+
+header.navbar-container .nav-list li a{
+    text-decoration: none;
+    font-weight: 600;
+    color:red;
+    font-size: 1.05rem;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+}
+
+header.navbar-container .nav-list li:hover a{
+    border: 3px solid red;
+    color: red;
+    background-color: transparent;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+}
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin-inline: auto;
+    padding: 2rem 4rem;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 7rem;
+    column-gap: 1rem;
+    align-content: space-around;
+}
+
+main .content{
+    width: 73%;
+}
+
+main .content .content-description .title{
+    font-size: 3.5rem;
+    margin-block: 1rem;
+}
+
+main .content .content-description p{
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+}
+
+main .content .content-description a{
+    text-decoration: none;  
+    color: white;
+}
+
+main .content .content-description a:hover{
+    color: red;
+}
+
+main .content .content-description button{
+    padding: .8rem 2.5rem;
+    margin-block-start: 1rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: red;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+main .content .content-description h1{
+    color: red;
+}
+
+main .content .content-description button:hover{
+    border: 3px solid red;
+    background-color: transparent;
+}
+
+main aside{
+    width: 25%;
+}
+
+.profile table{
+    text-align: justify;
+}
+.profile header{
+    text-align: center;
+    font-weight: bold;
+}
+
+.profile img{
+    width: 140px;
+}
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+main #venue {
+    width: 32%;
+    max-width: 800px;
+    min-height: 400px;
+    border: 3px solid red;
+    flex-flow: column;
+    flex: 0 1 300px;
+}
+
+main #venue img{
+    order: -1;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: top;
+}
+
+main #venue button{
+    padding: .8rem 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1rem;
+    font-family: 'Quicksand', sans-serif;
+    color: white;   
+
+    border: 3px solid transparent;
+    border-radius: 999px;
+    background-color: red;
+    cursor: pointer;
+    transition: all .15s ease-in;
+}
+
+footer {
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    background-color: red;
+  }
+@media screen and (max-width: 928px) {
+    header.navbar-container{
+        flex-direction: column;
+    }
+    header.navbar-container .nav-list ul{
+        flex-wrap: wrap;
+        column-gap: .5rem;
+    }
+    main #venue{
+        order: 30;
+    }
+    main aside{
+        order: 40;
+        width: 60%;
+        flex-grow: 1;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header.navbar-container .nav-list ul{
+        justify-content: center;
+    }
+    main #venue{
+        order: 30;
+    }
+    main aside{
+        flex-grow: 1;
+        order: 40;
+        align-self: stretch;
+    }
+}
